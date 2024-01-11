@@ -10,9 +10,9 @@ import ReactFlow, {
     useEdgesState,
     MarkerType, Position, NodeTypes
 } from 'reactflow';
-import {RootState} from "./store.ts";
+import {RootState} from "./store";
 import {useDispatch, useSelector} from "react-redux";
-import {onConnect, onEdgesChange, onNodesChange} from "./store/flowSlice.ts";
+import {onConnect, onEdgesChange, onNodesChange} from "./store/flowSlice";
 import CustomNode from "./nodes-component/CustomNode.tsx";
 
 const nodeTypes:NodeTypes = {

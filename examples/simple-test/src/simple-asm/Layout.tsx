@@ -11,7 +11,7 @@ const Layout: React.FC<LayoutProps> = ({  App, Sidebar }) => {
             <div className="w-1/4 bg-gray-200 h-screen" style={{ width: '200px' }}>
                <Sidebar/>
             </div>
-            <div className="w-3/4 h-screen"  style={{ width: '500px',height:'600px' }}>
+            <div className="w-3/4 h-screen">
                <App/>
             </div>
         </div>
