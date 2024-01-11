@@ -29,6 +29,7 @@ const getEsmConfig = (format) => ({
   input: pkg.source,
   output: {
     file: format === 'js' ? pkg.module : pkg.module.replace('.js', '.mjs'),
+    sourcemap:true,
     format: 'esm',
   },
   onwarn,
@@ -56,6 +57,7 @@ export const umdConfig = defineConfig({
     file: pkg.main,
     format: 'umd',
     exports: 'named',
+    sourcemap:true,
     name: pkg.rollup?.name || 'ReactFlow',
     globals,
   },
@@ -68,7 +70,7 @@ export const umdConfig = defineConfig({
       preventAssignment: true,
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
     }),
-    terser(),
+    // terser(),
   ],
 });
 
