@@ -1,4 +1,5 @@
-import 'reactflow/dist/style.css';
+// import 'reactflow/dist/style.css';
+import './reactflow.css';
 import './nodes-component/custom-node.css';
 import ReactFlow, {
     addEdge,
