@@ -18,6 +18,8 @@
     "react-dom": "^18.2.0",
     "lodash": "4.17.21",
     "react-router-dom": "^6.3.0",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6",
     "reactflow": "workspace:*",
     "zustand": "^4.4.1"
   },
